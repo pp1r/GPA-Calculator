@@ -1,58 +1,60 @@
-GPA Calculator
-Team Members
-Sulaiman
-Abdulkarim
-Abdulmjed
-Description
-This GPA Calculator calculates your total GPA and semester GPA. Your GPA, semester GPA and degree status will be shown to you by this program. The GPA specializes in helping students determine their GPA during different study periods. It is a very accurate and easy-to-use service, made using the C programming language, making it usable on computers.
+# GPA Calculator
 
-Features and Capabilities
-Search by University ID
-Delete record by University ID
-Change student name or grade or both
-Error message displayed if ID number already exists
-User Manual
-Insert new record
-Display the record
-Search by University ID
-Delete a record by University ID
-Update a record by University ID
-Sort all records
-Exit
-Flow Chart
-See here for a description of the flow chart.
+## Contributors
+- Sulaiman
+- Abdulkarim
+- Abdulmjed
 
-Custom Functions
-In this project, we have created eight functions to meet project requirements:
+## Description
+A C programming language based GPA calculator that calculates your total GPA and semester GPA. This program displays your GPA, semester GPA, and degree status to help students determine their GPA during different study periods. The program is accurate and easy to use. 
 
-void insert(): inserts records into the file. A file is created, then a registry is opened and the following is inserted:
-University ID
-Student name
-Number of subjects
-Grades and number of hours
-Semester GPA and cumulative grade are calculated based on number of subjects.
-void search(): searches for a given record through the ID and displays:
-ID
-Student name
-Total
-GPA
-Number of hours
-void deletefile(): deletes a record by ID.
-void update(): updates an existing record with the identifier and can update:
-Name only
-Total only
-Name and total
-void disp(): displays the contents of the record, including:
-ID
-Student name
-Total
-GPA
-Number of hours
-void sort(): sorts the records.
-int avlsub(int rno): checks if the given ID number is available.
-int empty(): checks if the file is empty.
-C Standard Library Functions Used
-<stdlib.h>: C Standard General Utilities Library. Defines several general purpose functions.
-<stdio.h>: defines three variable types, several macros, and various functions for input and output.
-Task Breakup
-The team worked on the code together using the website Repl.it, which allows for simultaneous code entry with colleagues.
+## Features and Capabilities
+1. Search by University ID
+2. Delete a record by University ID
+3. Update a record by University ID (change name or grade, or both)
+4. Error message for duplicate University ID
+
+## User Manual
+1. Insert a new record
+2. Display the record
+3. Search by University ID
+4. Delete a record by University ID
+5. Update a record by University ID
+6. Sort all records
+7. Exit
+
+## Flow Chart
+See [here](https://app.code2flow.com/MR08iwDH6csZ) for the flow chart description.
+
+## Custom Functions
+The project consists of eight functions to meet project requirements:
+1. `void insert()`: Inserts records to the file. Creates a file, opens a registry and inserts the following:
+    - University ID
+    - Student's name
+    - The number of subjects
+    - Grades and the number of hours
+    - Calculates semester GPA and cumulative grade.
+2. `void search()`: Searches for a record by ID and displays:
+    - ID
+    - Student's name
+    - Total
+    - GPA
+    - The number of hours.
+3. `void deletefile()`: Deletes a record by ID.
+4. `void update()`: Updates an existing record by ID and includes:
+    - Name only
+    - Total only
+    - Name and total.
+5. `void disp()`: Displays the contents of a record and includes:
+    - ID
+    - Student's name
+    - Total
+    - GPA
+    - The number of hours.
+6. `void sort()`: Sorts the records.
+7. `int avlsub(int rno)`: Checks if the given ID number is available.
+8. `int empty()`: Checks if the file is empty or not.
+
+## C Standard Library functions used
+1. `<stdlib.h>`: C Standard General Utilities Library. Defines general purpose functions.
+2. `<stdio.h>`: Defines variable types, macros, and functions for input and output.
